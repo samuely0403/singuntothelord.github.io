@@ -1,0 +1,409 @@
+/*
+Theme Name: sing untothe lord
+Theme URI: http://singuntothelord.ezyro.com/
+Author: samuel
+Author URI: http://singuntothelord.ezyro.com/
+Description: Wordpress Theme
+Version: 1.0
+*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+}
+.contain{
+	margin: 70px;
+}
+.main nav{
+	z-index: 3;
+	position: relative;
+	width: 100%;
+	color: #f2f2f2;
+	background: #222222;
+	padding: 10px 40px 10px 10px;
+	border: 1px solid #000;
+	border-left:none;
+	border-right: none;
+}	
+nav ul{
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+nav ul li.logo-in{
+	flex: 1;
+	font-size: 30px;
+	font-weight: 700;
+}
+nav ul div.items{
+	padding: 0 25px;
+	display: inline-flex;
+}
+nav ul div.items a{
+	color: #f2f2f2;
+	text-decoration: none;
+	font-size: 13px;
+	padding: 0 12px;
+}
+nav ul div.items a:hover{
+	color: cyan;
+}
+nav ul div.search-box{
+	background:#fff;
+	height: 30px;
+	border-radius: 30px;
+	padding: 0px;
+}
+nav ul div.search-box:hover > .search-txte{
+	width: 200px;
+	padding: 0 6px;
+}
+nav ul div.search-box:hover > .search-bess{
+	background: #000;
+}
+.search-bess{
+	color: #e84118;
+	float: right;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search-txte{
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: #000;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 30px;
+	width: 0px;
+}
+
+
+nav ul li.btn{
+	font-size: 29px;
+	flex: 1;
+	padding: 0 40px;
+	display: none;
+}
+nav ul li.btn span{
+	height: 42px;
+	width: 42px;
+	text-align: center;
+	line-height: 42px;
+	border: 1px solid #151515;
+	border-radius: 5px;
+	cursor: pointer;
+}
+nav ul li.btn span.show:before{
+	content: '\f00d';
+}
+@media screen and (max-width: 1070px){
+	nav{
+		width: 100%;
+		position: fixed;
+		padding: 10px 40px 10px 0px;
+	}
+	nav ul li.logo-in{
+		display: none;
+	}
+	nav ul div.items{
+		flex: 4;
+	}
+}
+@media screen and (max-width: 800px){
+	nav ul li.btn{
+		display: block;
+	}
+	nav{
+		z-index: 3;
+		padding: 9px 40px 9px 0;
+		position: fixed;
+		width: 100%;
+	}
+	nav ul div.items{
+		z-index: 2;
+		position: fixed;
+		top: -350px;
+		right: 0;
+		width: 100%;
+		background: #222222;
+		display: inline-block;
+		transition: top .4s;
+	}
+	nav ul div.items.show{
+		top: 50px;
+	}
+	nav ul div.items li{
+		text-align: center;
+		line-height: 30px;
+		margin: 30px 0;
+	}
+	nav ul div.items li a{
+		font-size: 19px;
+	}
+}
+#musicer{
+	background:linear-gradient(rgba(0,0,0,0.5),#009688),url(C:/Users/samuel/Desktop/website/images/musicers.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	z-index: -1;
+}		
+.musicer-text{
+	text-align: center;
+	color: #fff;
+	padding-top: 180px;
+}
+.musicer-text h1{
+		font-size: 130px;
+		font-family: 'Kaushan Script', cursive;
+}		
+.musicer-text p{
+		font-size: 20px;
+		font-style: italic;
+}				
+.musicer-btn{
+	margin: 70px auto 0;
+}	
+.musicer-btn a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 12px 0;
+	color: #fff;
+	border: .5px solid #fff;
+	position: relative;
+	z-index: 1;
+	transition: color 0.5s;
+}
+.musicer-btn a span{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: -1;
+	transition: 0.5s;
+}	
+.musicer-btn a:hover span{
+	width: 100%;
+}	
+.musicer-btn a:hover{
+	color: #000;
+}	
+
+@media screen and (max-width: 770px){
+	.musicer-text h1{
+		font-size: 44px;
+	}	
+	.musicer-btn a{
+		display: block;
+		margin: 20px auto;
+	}
+	.headtext h1{
+		font-size: 18px;
+	}
+
+	
+}
+.HYMNS-text h1{
+	position: relative;
+	padding-top: 80px;
+	padding-left: 5%;
+	font-size: 25px;
+	color: #000;
+	
+} 
+
+.search-input{
+	position: absolute;
+	top: 40%;
+	left: 75%;
+	transform: translate(-50%, 0);
+	background:#fff;
+	height: 40px;
+	border-radius: 40px;
+	padding: 0px;
+}
+.search-input:hover > .search-txt{
+	width: 240px;
+	padding: 0 6px;
+}
+.search-input:hover > .search-bes{
+	background: #000;
+}
+.search-bes{
+	color: #e84118;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search-txt{
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: #000;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 40px;
+	width: 240px;
+}
+
+
+.Hymnslist-text{
+	text-align: center;
+	padding-top: 20px;
+}
+.content-table{
+	position: absolute;
+	z-index: -1;
+	left: 30%;
+	top: 45%;
+	transform: translate(-50%, 0);
+	width: 50%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 25px auto;
+	font-size: 0.9em;
+	min-width: 400px;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.table thead tr {
+	background-color: #fff;
+	color: #000;
+	text-align: left;
+	font-weight: bold;
+	outline: 1px solid #000;
+}
+.table th{
+	font-size: 20px;
+	
+}
+.table th,
+.table td {
+	padding: 12px 15px;
+}
+  
+.table tbody tr {
+	border-bottom: 1px solid #dddddd;
+}
+.table tbody tr:nth-of-type(even){
+	background-color: #f3f3f3;
+}
+.table tbody tr:last-of-type{
+	border-bottom: 2px solid #009879;
+}
+
+
+.lyrics-text h3{
+	color: #000;
+	line-height: 50px;
+	position: absolute;
+	margin: 0 50px;
+	top: 250px;
+}
+.lyrics-text h3:after{
+	content:"";
+	display:block;
+	width: 200px;
+	height:2px;
+	background:#f5f5f5;
+	position: absolute;
+	left: 250px;
+	top: 50%;
+}	
+.lyrics-texts h3{
+	line-height: 50px;
+	position: absolute;
+	left: 520px;
+	top: 250px;
+}
+.container{
+	padding: 50px;
+}
+.tab_container{
+	display: flex;
+	border-bottom: 1px solid red;
+	max-width: 600px;
+	margin: 20px ;
+	list-style: none;
+	position: relative;
+}
+input[type="radio"] {
+	display: none;
+}
+.tab_container li{
+	float: left;
+	display: block;
+	
+}
+.tab_container label{
+	display: inline-block;
+	background: transparent;
+	outline: none;
+	cursor: pointer;
+	padding: 5px 10px ;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #ccc;
+	border-radius: 10px;
+}
+.tab_container [id^="tab"]:checked + label{
+	background-color: red;
+}
+.tab_content {
+	background-color: #fff;
+	color: #000;
+	padding: 20px;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	display: none;
+}
+.tab_container [id^="tab"]:checked ~ .tab_content{
+	display: block;
+}
+.lyrics-min{
+	font-weight: 700;
+}
+
+ 
+#transposeDown{
+	background-color: red;
+	width: 100px;
+	padding: 5px 0;
+	margin: 0 10px;
+	cursor: pointer;
+}
+#transposeUp{
+	background-color: red;
+	width: 100px;
+	padding: 5px 0;
+	margin: 0 10px;
+	cursor: pointer;
+}
